@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em; /* Augmente la taille du texte */
+
+}
+
+.header-logo img {
+    width: 100px;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.header-right button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.order-button {
+    background-color: #ffcc00;
+    border: none;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+aside {
+    width: 20%;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-section {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu-section p {
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: flex;
+    gap: 20px;
+}
+
+
+.menu-item img {
+    width: 80%;
+    border-radius: auto;
+}
+
+.menu-item h2 {
+    font-size: 1em; /* Augmente la taille du texte */
+    margin-top: 10px;
+}
+
+
+.center-image {
+    width: 300px; /* Changez cette valeur pour augmenter la taille */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+
+
+footer {
+    text-align: center;
+    padding: 80px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.menu-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 35px; /* Ajout d'une marge en bas de chaque menu */
+}
+
+
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    gap: 10px ; /* Ajoute un espace de 20px entre les éléments */
+    text-align: left;
+}
+
+.restaurant {
+    margin-bottom: 30px; /* Espace entre les blocs d'adresse */
+}
+
+
+.menu-section-2 {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center; /* Centre le texte et les éléments à l'intérieur */
+    border-radius: 8px;
+    margin: 0 auto; /* Centre la section dans la page */
+}
+
+.menu-item-moi {
+    display: flex;
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    flex-direction: column; /* Place l'image et le texte en colonne */
+    margin-top: 20px; /* Ajoute un espace au-dessus */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+}
+
+.button-link {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #e6b800;
+}
+
+
+/* Appareils mobiles (petits à moyens) */
+@media only screen and (max-width: 767px) {
+
+    
+    #img-header {
+        display: none; /* Masque l'image du header sur les petits écrans */
+    }
+
+    .w-50 {
+        width: 100%; /* Les éléments prennent 100% de la largeur sur les petits écrans */
+        text-align: center; /* Alignement centré pour les petits écrans */
+    }
+
+    /* Navigation en colonne pour smartphone */
+    nav ul {
+        flex-direction: column; /* Réorganise les liens de navigation verticalement */
+        align-items: center; /* Centre les éléments de navigation */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espacement vertical entre les éléments de navigation */
+    }
+
+    /* Ajuste la taille de la police pour les petits appareils */
+    body {
+        font-size: 14px; /* Taille de texte plus petite pour les petits écrans */
+    }
+
+    /* Les éléments de menu prennent toute la largeur */
+    .menu-item {
+        width: 100%;
+    }
+
+    /* Disposition du contenu sur une seule colonne */
+    main {
+        flex-direction: column;
+    }
+
+    /* Le sidebar prend toute la largeur sur mobile */
+    aside {
+        width: 100%;
+        margin-bottom: 20px; /* Ajoute un espacement sous le sidebar */
+    }
+
+    /* Section du menu à 100% de largeur */
+    .menu-section {
+        width: 100%;
+    }
+}
+
+/* Tablettes */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; /* Taille de police plus grande pour tablettes */
+    }
+
+    /* Les éléments prennent 70% de la largeur sur tablettes */
+    .w-50 {
+        width: 70%;
+    }
+
+    /* Les éléments de menu prennent 45% de la largeur */
+    .menu-item {
+        width: 45%;
+    }
+
+    /* Sidebar plus large pour tablettes */
+    aside {
+        width: 25%;
+    }
+
+    /* La section du menu prend 70% de la largeur */
+    .menu-section {
+        width: 70%;
+    }
+}
+
+/* Ordinateurs et grands écrans */
+@media only screen and (min-width: 1025px) {
+    #img-header {
+        display: block; /* Affiche l'image du header sur les grands écrans */
+    }
+
+    .w-50 {
+        width: 50%; /* Les éléments reprennent 50% de largeur sur les grands écrans */
+        text-align: left; /* Alignement à gauche pour les grands écrans */
+    }
+
+    /* Flex horizontal pour la navigation */
+    nav ul {
+        flex-direction: row; /* Réorganise les liens de navigation horizontalement */
+    }
+
+    .menu-item {
+        width: 30%; /* Les éléments de menu reprennent 30% de largeur */
+    }
+
+    aside {
+        width: 20%; /* Sidebar à 20% sur les grands écrans */
+    }
+
+    .menu-section {
+        width: 80%; /* La section du menu reprend 80% de la largeur */
+    }
+}

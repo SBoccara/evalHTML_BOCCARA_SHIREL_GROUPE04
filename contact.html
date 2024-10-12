@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Assure que la page est bien adaptée aux petits écrans (comme les téléphones) -->
+
+    <title>Contactez-nous - McDonald's France</title>
+    <!-- Titre de la page qui apparaîtra dans l'onglet du navigateur -->
+
+    <style>
+        /* Styles CSS directement intégrés dans le fichier HTML */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            /* Style général du corps de la page : police, marges, couleur de fond */
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+            /* En-tête avec fond jaune et texte centré */
+        }
+
+        header h1 {
+            margin: 0;
+            color: #333;
+            /* Style du titre de l'en-tête : pas de marge, texte foncé */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Conteneur principal pour centrer et styliser la section de contact */
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            /* Style du sous-titre (centré et couleur foncée) */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            /* Formulaire avec des champs alignés verticalement avec un espace entre eux */
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            /* Style des étiquettes de formulaire */
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            /* Style des champs de texte et de la zone de texte du formulaire */
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+            /* Hauteur de la zone de texte et désactivation du redimensionnement */
+        }
+
+        button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 15px;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            /* Bouton avec fond jaune, texte foncé, et effet au survol */
+        }
+
+        button:hover {
+            background-color: #e6b800;
+            /* Change la couleur du bouton quand on passe la souris dessus */
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+            /* Section des informations de contact centrée */
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            /* Marges des paragraphes d'information */
+        }
+
+        .social-links img {
+            width: 32px;
+            margin: 0 10px;
+            vertical-align: middle;
+            /* Style des icônes des réseaux sociaux */
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Contactez McDonald's avec Shirel</h1>
+    <!-- En-tête de la page avec le titre centré -->
+</header>
+
+<div class="container">
+    <!-- Conteneur principal de la section de contact -->
+
+    <h2>Nous sommes à votre écoute</h2>
+    <!-- Sous-titre de la section -->
+
+    <form action="#" method="post">
+        <!-- Formulaire pour entrer les informations de contact -->
+
+        <label for="name">Nom complet :</label>
+        <!-- Étiquette pour le champ du nom complet -->
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        <!-- Champ pour entrer le nom -->
+
+        <label for="email">Adresse e-mail :</label>
+        <!-- Étiquette pour le champ de l'email -->
+        <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+        <!-- Champ pour entrer l'email -->
+
+        <label for="subject">Sujet :</label>
+        <!-- Étiquette pour le sujet du message -->
+        <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+        <!-- Champ pour entrer le sujet du message -->
+
+        <label for="message">Message :</label>
+        <!-- Étiquette pour le champ du message -->
+        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+        <!-- Zone de texte pour entrer le message -->
+
+        <button type="submit">Envoyer le message</button>
+        <!-- Bouton pour soumettre le formulaire -->
+    </form>
+
+    <div class="contact-info">
+        <h3>Informations de contact</h3>
+        <!-- Informations de contact en dessous du formulaire -->
+        <p>📍 Adresse : 47 Bd de Pesaro, 92000 Nanterre, France</p>
+        <p>📞 Téléphone : +33 6 63 83 68 38</p>
+        <p>📧 Email : shirel.boccara@edu.devinci.fr</p>
+
+        <div class="social-links">
+            <!-- Liens vers les réseaux sociaux avec des icônes -->
+
+            <a href="https://facebook.com/McDonaldsFrance" target="_blank">
+                <!-- "_blank" = le site s'ouvrira dans un nouvel onglet du navigateur, permettant à l'utilisateur de garder l'onglet actuel ouvert. -->
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+
+            <a href="https://instagram.com/McDonaldsFrance" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+
+            <a href="https://twitter.com/McDonaldsFrance" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+            </a>
+
+            <a href="https://youtube.com/McDonaldsFrance" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube">
+            </a>
+
+        </div>
+
+    </div>
+    
+</div>
+
+</body>
+</html>

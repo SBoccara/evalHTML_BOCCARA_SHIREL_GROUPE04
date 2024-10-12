@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander - McDonald's France</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="order-container">
+    <!-- Division qui contient tout le formulaire de commande, utilisée pour structurer le contenu et faciliter son style via la classe 'order-container' -->
+
+        <h2>Passer une commande</h2>
+
+        <form action="/checkout" method="POST">
+        <!-- Formulaire pour passer la commande. L'attribut "action" indique où les données seront envoyées (vers "/checkout") et "method=POST" signifie que les données seront envoyées de manière sécurisée -->                
+
+
+            <label for="item">Sélectionnez votre menu :</label>
+            <!-- Étiquette (label) pour le champ de sélection du menu. "for" fait référence à l'élément dont l'identifiant est "item" -->
+
+            <select id="item" name="item" required>
+            <!-- Menu déroulant permettant à l'utilisateur de sélectionner un menu. "required" signifie que l'utilisateur doit obligatoirement choisir une option avant de soumettre le formulaire -->
+
+                <option 
+                value="theamericanclassic™">The American Classic™
+                </option>
+                <!-- Option du menu déroulant  -->
+
+                <option 
+                value="theroyalmenu™">The Royal Menu™
+                </option>
+                
+                <option 
+                value="thefantasticmulticolor™">The Fantastic Multicolor™
+                </option>
+
+                
+                <option 
+                value="thetropicalbeach™">The Tropical Beach™
+                </option>
+
+
+                <option 
+                value="themagicalburger™">The Magical Burger™
+                </option>
+
+
+                <option 
+                value="theveggie™">The Veggie™
+                </option>
+
+
+            </select>
+
+
+           <br>
+            <!-- Pour espacer -->
+
+            <label for="quantity">Quantité :</label>
+            <!-- Étiquette pour le champ de saisie de la quantité de menus commandés -->
+
+
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            <!-- Champ de saisie pour indiquer la quantité. Type "number" pour forcer l'utilisateur à entrer un nombre, avec une valeur minimale de 1 et une valeur par défaut de 1 -->
+
+            <br>
+
+            <label for="address">Adresse de livraison :</label>
+            <!-- Étiquette pour le champ de saisie de l'adresse de livraison -->
+
+            <input type="text" id="address" name="address" required>
+            <!-- Champ de texte pour entrer l'adresse de livraison, avec l'attribut "required" pour rendre ce champ obligatoire -->
+
+            <br><br>
+
+
+            <button type="submit" class="button-link">Commander</button>
+            <!-- Bouton de soumission pour envoyer les informations du formulaire. -->
+
+        </form>
+        <!-- Fin du formulaire -->
+
+    </div>
+
+</body>
+</html>
